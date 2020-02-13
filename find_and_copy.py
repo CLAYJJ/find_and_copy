@@ -8,7 +8,7 @@ def usage():
     print("usage:"+sys.argv[0]+" <source_path> <target_path>")
 
 def copy_files(source, target):
-    shutil.copy(source, target)
+    shutil.copytree(source, target)
 
 
 def get_path(path:str, if_exit=False):
